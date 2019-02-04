@@ -11,7 +11,7 @@ def load_data():
     data = response.read()
     str_data = data.decode("utf-8")
     print(str_data)
-    #将数据写入文件
+    #将数据写入文件 超文本写入用字符串 视频音频用wb
     with open("baidu.html","w",encoding="utf-8") as f:
         f.write(str_data)
 
